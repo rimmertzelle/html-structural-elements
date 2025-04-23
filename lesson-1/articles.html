@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Article Introductions</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <header class="bg-gray-900 text-white py-6 text-center">
+    <h1 class="text-3xl font-bold">Featured Article Introductions</h1>
+  </header>
+
+  <main class="max-w-7xl mx-auto p-6">
+    <section class="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+
+      <!-- Article Template -->
+      <article class="bg-white rounded-xl shadow-md p-5 flex flex-col space-y-4" data-category="Technology">
+        <div class="text-sm font-semibold text-blue-600 uppercase">Technology</div>
+        <header>
+          <h2 class="text-xl font-bold">The Rise of Electric Vehicles</h2>
+          <p class="text-sm text-gray-500">By <strong>Jane Doe</strong> | <time datetime="2025-04-01">April 1, 2025</time></p>
+        </header>
+        <img class="rounded-md object-cover w-full h-48" src="https://placebeard.it/400x200" alt="Electric Vehicle">
+        <p>Electric vehicles are transforming the automotive industry. Learn how innovation and environmental concerns are driving this shift.</p>
+        <ul class="flex flex-wrap gap-2 text-sm text-gray-700 mt-auto">
+          <li class="bg-gray-200 px-3 py-1 rounded-full">EV</li>
+          <li class="bg-gray-200 px-3 py-1 rounded-full">Clean Energy</li>
+          <li class="bg-gray-200 px-3 py-1 rounded-full">Automotive</li>
+        </ul>
+      </article>
+
+      <article class="bg-white rounded-xl shadow-md p-5 flex flex-col space-y-4" data-category="Lifestyle">
+        <div class="text-sm font-semibold text-blue-600 uppercase">Lifestyle</div>
+        <header>
+          <h2 class="text-xl font-bold">Urban Gardening: Growing Food in Small Spaces</h2>
+          <p class="text-sm text-gray-500">By <strong>Mark Green</strong> | <time datetime="2025-03-28">March 28, 2025</time></p>
+        </header>
+        <img class="rounded-md object-cover w-full h-48" src="https://placebeard.it/400x200" alt="Urban Garden">
+        <p>Discover how city dwellers are turning balconies and rooftops into lush, productive gardens.</p>
+        <ul class="flex flex-wrap gap-2 text-sm text-gray-700 mt-auto">
+          <li class="bg-gray-200 px-3 py-1 rounded-full">Gardening</li>
+          <li class="bg-gray-200 px-3 py-1 rounded-full">Urban Life</li>
+          <li class="bg-gray-200 px-3 py-1 rounded-full">Sustainability</li>
+        </ul>
+      </article>
+
+      <article class="bg-white rounded-xl shadow-md p-5 flex flex-col space-y-4" data-category="Health">
+        <div class="text-sm font-semibold text-blue-600 uppercase">Health</div>
+        <header>
+          <h2 class="text-xl font-bold">AI in Healthcare: A New Era of Medicine</h2>
+          <p class="text-sm text-gray-500">By <strong>Dr. Sarah Lin</strong> | <time datetime="2025-03-20">March 20, 2025</time></p>
+        </header>
+        <img class="rounded-md object-cover w-full h-48" src="https://placebeard.it/400x200" alt="AI in Healthcare">
+        <p>Artificial intelligence is revolutionizing diagnosis and treatment. This article explores its impact on patient care.</p>
+        <ul class="flex flex-wrap gap-2 text-sm text-gray-700 mt-auto">
+          <li class="bg-gray-200 px-3 py-1 rounded-full">AI</li>
+          <li class="bg-gray-200 px-3 py-1 rounded-full">Healthcare</li>
+          <li class="bg-gray-200 px-3 py-1 rounded-full">Technology</li>
+        </ul>
+      </article>
+
+      <article class="bg-white rounded-xl shadow-md p-5 flex flex-col space-y-4" data-category="Work">
+        <div class="text-sm font-semibold text-blue-600 uppercase">Work</div>
+        <header>
+          <h2 class="text-xl font-bold">Remote Work: The Future of Employment</h2>
+          <p class="text-sm text-gray-500">By <strong>Alex Chen</strong> | <time datetime="2025-03-18">March 18, 2025</time></p>
+        </header>
+        <img class="rounded-md object-cover w-full h-48" src="https://placebeard.it/400x200" alt="Remote Work">
+        <p>As remote work becomes more common, companies and employees are navigating new opportunities and challenges.</p>
+        <ul class="flex flex-wrap gap-2 text-sm text-gray-700 mt-auto">
+          <li class="bg-gray-200 px-3 py-1 rounded-full">Work</li>
+          <li class="bg-gray-200 px-3 py-1 rounded-full">Remote</li>
+          <li class="bg-gray-200 px-3 py-1 rounded-full">Digital Life</li>
+        </ul>
+      </article>
+
+      <article class="bg-white rounded-xl shadow-md p-5 flex flex-col space-y-4" data-category="Environment">
+        <div class="text-sm font-semibold text-blue-600 uppercase">Environment</div>
+        <header>
+          <h2 class="text-xl font-bold">Climate Change and Coastal Cities</h2>
+          <p class="text-sm text-gray-500">By <strong>Lena Reyes</strong> | <time datetime="2025-03-15">March 15, 2025</time></p>
+        </header>
+        <img class="rounded-md object-cover w-full h-48" src="https://placebeard.it/400x200" alt="Flooded Coastal City">
+        <p>Coastal cities face increasing risks from rising sea levels. Find out how communities are adapting.</p>
+        <ul class="flex flex-wrap gap-2 text-sm text-gray-700 mt-auto">
+          <li class="bg-gray-200 px-3 py-1 rounded-full">Climate</li>
+          <li class="bg-gray-200 px-3 py-1 rounded-full">Resilience</li>
+          <li class="bg-gray-200 px-3 py-1 rounded-full">Urban Planning</li>
+        </ul>
+      </article>
+
+      <article class="bg-white rounded-xl shadow-md p-5 flex flex-col space-y-4" data-category="Lifestyle">
+        <div class="text-sm font-semibold text-blue-600 uppercase">Lifestyle</div>
+        <header>
+          <h2 class="text-xl font-bold">The Art of Minimalist Living</h2>
+          <p class="text-sm text-gray-500">By <strong>Tom Blake</strong> | <time datetime="2025-03-10">March 10, 2025</time></p>
+        </header>
+        <img class="rounded-md object-cover w-full h-48" src="https://placebeard.it/400x200" alt="Minimalist Interior">
+        <p>Minimalism is more than a trend—it's a lifestyle that promotes clarity and focus through simplicity.</p>
+        <ul class="flex flex-wrap gap-2 text-sm text-gray-700 mt-auto">
+          <li class="bg-gray-200 px-3 py-1 rounded-full">Minimalism</li>
+          <li class="bg-gray-200 px-3 py-1 rounded-full">Design</li>
+          <li class="bg-gray-200 px-3 py-1 rounded-full">Wellness</li>
+        </ul>
+      </article>
+
+      <article class="bg-white rounded-xl shadow-md p-5 flex flex-col space-y-4" data-category="Culture">
+        <div class="text-sm font-semibold text-blue-600 uppercase">Culture</div>
+        <header>
+          <h2 class="text-xl font-bold">The Return of Vinyl Records</h2>
+          <p class="text-sm text-gray-500">By <strong>Nina Kelly</strong> | <time datetime="2025-03-05">March 5, 2025</time></p>
+        </header>
+        <img class="rounded-md object-cover w-full h-48" src="https://placebeard.it/400x200" alt="Vinyl Record">
+        <p>Vinyl is back in vogue. We explore why this retro format is thriving in the digital age.</p>
+        <ul class="flex flex-wrap gap-2 text-sm text-gray-700 mt-auto">
+          <li class="bg-gray-200 px-3 py-1 rounded-full">Music</li>
+          <li class="bg-gray-200 px-3 py-1 rounded-full">Retro</li>
+          <li class="bg-gray-200 px-3 py-1 rounded-full">Culture</li>
+        </ul>
+      </article>
+
+      <article class="bg-white rounded-xl shadow-md p-5 flex flex-col space-y-4" data-category="Tech">
+        <div class="text-sm font-semibold text-blue-600 uppercase">Tech</div>
+        <header>
+          <h2 class="text-xl font-bold">Exploring the Metaverse</h2>
+          <p class="text-sm text-gray-500">By <strong>Omar Singh</strong> | <time datetime="2025-03-01">March 1, 2025</time></p>
+        </header>
+        <img class="rounded-md object-cover w-full h-48" src="https://placebeard.it/400x200" alt="Metaverse Concept">
+        <p>Step into the world of virtual reality and learn what the metaverse might mean for the future of online interaction.</p>
+        <ul class="flex flex-wrap gap-2 text-sm text-gray-700 mt-auto">
+          <li class="bg-gray-200 px-3 py-1 rounded-full">VR</li>
+          <li class="bg-gray-200 px-3 py-1 rounded-full">Metaverse</li>
+          <li class="bg-gray-200 px-3 py-1 rounded-full">Futurism</li>
+        </ul>
+      </article>
+
+      <article class="bg-white rounded-xl shadow-md p-5 flex flex-col space-y-4" data-category="Fashion">
+        <div class="text-sm font-semibold text-blue-600 uppercase">Fashion</div>
+        <header>
+          <h2 class="text-xl font-bold">Sustainable Fashion: Changing the Industry</h2>
+          <p class="text-sm text-gray-500">By <strong>Carla Brooks</strong> | <time datetime="2025-02-26">February 26, 2025</time></p>
+        </header>
+        <img class="rounded-md object-cover w-full h-48" src="https://placebeard.it/400x200" alt="Sustainable Fashion">
+        <p>The fashion industry is going green. Discover how brands and consumers are embracing sustainability.</p>
+        <ul class="flex flex-wrap gap-2 text-sm text-gray-700 mt-auto">
+          <li class="bg-gray-200 px-3 py-1 rounded-full">Ethical</li>
+          <li class="bg-gray-200 px-3 py-1 rounded-full">Fashion</li>
+          <li class="bg-gray-200 px-3 py-1 rounded-full">Environment</li>
+        </ul>
+      </article>
+
+      <article class="bg-white rounded-xl shadow-md p-5 flex flex-col space-y-4" data-category="Space">
+        <div class="text-sm font-semibold text-blue-600 uppercase">Space</div>
+        <header>
+          <h2 class="text-xl font-bold">Space Tourism: The Final Frontier?</h2>
+          <p class="text-sm text-gray-500">By <strong>Chris Vega</strong> | <time datetime="2025-02-22">February 22, 2025</time></p>
+        </header>
+        <img class="rounded-md object-cover w-full h-48" src="https://placebeard.it/400x200" alt="Space Capsule">
+        <p>With private companies launching civilians into space, we explore the implications of space tourism.</p>
+        <ul class="flex flex-wrap gap-2 text-sm text-gray-700 mt-auto">
+          <li class="bg-gray-200 px-3 py-1 rounded-full">Space</li>
+          <li class="bg-gray-200 px-3 py-1 rounded-full">Exploration</li>
+          <li class="bg-gray-200 px-3 py-1 rounded-full">Commercial Flight</li>
+        </ul>
+      </article>
+
+    </section>
+  </main>
+
+  <footer class="text-center py-6 bg-gray-900 text-white mt-10">
+    <p>&copy; 2025 FutureReads. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
