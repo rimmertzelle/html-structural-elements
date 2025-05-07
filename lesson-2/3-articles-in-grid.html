@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step 1 - centering an article</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 1fr;
+            /* Default: one column for mobile */
+            gap: 20px;
+            /* Adds spacing between articles */
+            width: 100%;
+            max-width: 1200px;
+            /* Optional: limits the width of the grid */
+            padding: 20px;
+            /* Optional: adds padding around the grid */
+            box-sizing: border-box;
+        }
+
+        article {
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            padding: 20px;
+            box-sizing: border-box;
+            /* Ensures padding is included in width */
+        }
+
+        /* Style for the first article */
+        article:first-of-type {
+            display: flex;
+            padding:  0;
+            /* Use Flexbox for layout */
+            gap: 20px;
+            /* Space between image and text */
+
+        }
+
+        article:first-of-type img {
+            border-radius: 8px;
+            /* Matches the border radius of the article */
+            object-fit: cover;
+            /* Ensures the image fills its container */
+            width: 50%;
+            /* Image takes up no more than half the width */
+            height: 100%;
+            /* Image fills the height of the article */
+        }
+
+        article:first-of-type section {
+            padding: 1rem;
+            background-color: #f9f9f9;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        /* Media query for larger screens */
+        @media (min-width: 768px) {
+            main {
+                grid-template-columns: repeat(2, 1fr);
+                /* Two columns for larger screens */
+            }
+
+            article:first-of-type {
+                grid-column: span 2;
+                /* First article spans both columns */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <article data-category="Lifestyle">
+            <img src="../images/frank-marino-7SokKNHZu54-unsplash.png" alt="Minimalist Interior">
+            <section>
+                <header>
+                    <h2>The Art of Minimalist Living</h2>
+                    <p>By <strong>Tom Blake</strong> | <time datetime="2025-03-10">March 10, 2025</time></p>
+                </header>
+                <section>
+                    <p>Minimalism is more than a trend—it's a lifestyle that promotes clarity and focus through
+                        simplicity.</p>
+                    <ul>
+                        <li>Minimalism</li>
+                        <li>Design</li>
+                        <li>Wellness</li>
+                    </ul>
+                </section>
+            </section>
+        </article>
+        <article data-category="Lifestyle">
+            <div>Lifestyle</div>
+            <header>
+                <h2>Designing a Sustainable Future</h2>
+                <p>By <strong>Jane Doe</strong> | <time datetime="2025-04-15">April 15, 2025</time></p>
+            </header>
+            <img src="https://placebeard.it/400x200" alt="Sustainable Design">
+            <p>Sustainability is key to ensuring a better future for generations to come.</p>
+            <ul>
+                <li>Sustainability</li>
+                <li>Design</li>
+                <li>Innovation</li>
+            </ul>
+        </article>
+        <article data-category="Lifestyle">
+            <div>Lifestyle</div>
+            <header>
+                <h2>Healthy Living Tips</h2>
+                <p>By <strong>John Smith</strong> | <time datetime="2025-05-01">May 1, 2025</time></p>
+            </header>
+            <img src="https://placebeard.it/400x200" alt="Healthy Living">
+            <p>Adopting healthy habits can lead to a more fulfilling life.</p>
+            <ul>
+                <li>Health</li>
+                <li>Wellness</li>
+                <li>Fitness</li>
+            </ul>
+        </article>
+        <article data-category="Lifestyle">
+            <div>Lifestyle</div>
+            <header>
+                <h2>Exploring the Outdoors</h2>
+                <p>By <strong>Emily Clark</strong> | <time datetime="2025-05-07">May 7, 2025</time></p>
+            </header>
+            <img src="https://placebeard.it/400x200" alt="Outdoor Adventure">
+            <p>Discover the joys of nature and outdoor adventures.</p>
+            <ul>
+                <li>Adventure</li>
+                <li>Nature</li>
+                <li>Travel</li>
+            </ul>
+        </article>
+    </main>
+</body>
+
+</html>
